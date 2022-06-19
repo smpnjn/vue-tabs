@@ -9,10 +9,10 @@
   onMounted(() => {
     tabs.value = [ ...tabContainer.value.querySelectorAll('.tab') ];
 		for(let x of tabs.value) {
-			if(x.classList.contains('active')) {
+	    if(x.classList.contains('active')) {
 				activeTabIndex = tabs.value.indexOf(x);
 			}
-		}
+    }
   })
   const changeTab = (index) => {
     activeTabIndex = index;
